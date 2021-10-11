@@ -1,4 +1,5 @@
 import React from 'react';
+import { NavLink } from "react-router-dom";
 import GreenCart from '../assets/green-cart.png';
 import IMAGE from '../assets/image.jpeg';
 
@@ -8,6 +9,7 @@ const WomenCategory = props => {
         <>
         <div className="category__name">Category name</div>
         <div className="container">
+           
             <div className="item__box">
                 <div className="out__of__stock">out of stock</div>
                 <div className="item__image">
@@ -20,6 +22,7 @@ const WomenCategory = props => {
                 <div className="item__name">Apollo running short</div>
                 <div className="item__price">$49.99</div>
             </div>
+            <NavLink to="/product">
             <div className="item__box">
                 <div className="item__image">
                     <img src={IMAGE} alt="item_image" />
@@ -31,6 +34,7 @@ const WomenCategory = props => {
                 <div className="item__name">Apollo running short</div>
                 <div className="item__price">$49.99</div>
             </div>
+            </NavLink>
             <div className="item__box">
                 <div className="item__image">
                     <img src={IMAGE} alt="item_image" />
