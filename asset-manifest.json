@@ -1,24 +1,25 @@
 {
   "files": {
-    "main.css": "/test-shop/static/css/main.d3aaa3ee.chunk.css",
-    "main.js": "/test-shop/static/js/main.ec2297eb.chunk.js",
-    "main.js.map": "/test-shop/static/js/main.ec2297eb.chunk.js.map",
-    "runtime-main.js": "/test-shop/static/js/runtime-main.9b047951.js",
-    "runtime-main.js.map": "/test-shop/static/js/runtime-main.9b047951.js.map",
-    "static/js/2.62a94994.chunk.js": "/test-shop/static/js/2.62a94994.chunk.js",
-    "static/js/2.62a94994.chunk.js.map": "/test-shop/static/js/2.62a94994.chunk.js.map",
-    "static/js/3.6c2d0681.chunk.js": "/test-shop/static/js/3.6c2d0681.chunk.js",
-    "static/js/3.6c2d0681.chunk.js.map": "/test-shop/static/js/3.6c2d0681.chunk.js.map",
+    "main.css": "/test-shop/static/css/main.49658dcb.chunk.css",
+    "main.js": "/test-shop/static/js/main.e016b647.chunk.js",
+    "main.js.map": "/test-shop/static/js/main.e016b647.chunk.js.map",
+    "runtime-main.js": "/test-shop/static/js/runtime-main.8a154109.js",
+    "runtime-main.js.map": "/test-shop/static/js/runtime-main.8a154109.js.map",
+    "static/js/2.84667b62.chunk.js": "/test-shop/static/js/2.84667b62.chunk.js",
+    "static/js/2.84667b62.chunk.js.map": "/test-shop/static/js/2.84667b62.chunk.js.map",
+    "static/js/3.32944a17.chunk.js": "/test-shop/static/js/3.32944a17.chunk.js",
+    "static/js/3.32944a17.chunk.js.map": "/test-shop/static/js/3.32944a17.chunk.js.map",
     "index.html": "/test-shop/index.html",
-    "precache-manifest.bf30f3106fe5d95ce35d46a404e3b230.js": "/test-shop/precache-manifest.bf30f3106fe5d95ce35d46a404e3b230.js",
+    "precache-manifest.a992fde3c4668636928519f5347504f7.js": "/test-shop/precache-manifest.a992fde3c4668636928519f5347504f7.js",
     "service-worker.js": "/test-shop/service-worker.js",
-    "static/css/main.d3aaa3ee.chunk.css.map": "/test-shop/static/css/main.d3aaa3ee.chunk.css.map",
-    "static/js/2.62a94994.chunk.js.LICENSE.txt": "/test-shop/static/js/2.62a94994.chunk.js.LICENSE.txt"
+    "static/css/main.49658dcb.chunk.css.map": "/test-shop/static/css/main.49658dcb.chunk.css.map",
+    "static/js/2.84667b62.chunk.js.LICENSE.txt": "/test-shop/static/js/2.84667b62.chunk.js.LICENSE.txt",
+    "static/media/image.jpeg": "/test-shop/static/media/image.c4abade5.jpeg"
   },
   "entrypoints": [
-    "static/js/runtime-main.9b047951.js",
-    "static/js/2.62a94994.chunk.js",
-    "static/css/main.d3aaa3ee.chunk.css",
-    "static/js/main.ec2297eb.chunk.js"
+    "static/js/runtime-main.8a154109.js",
+    "static/js/2.84667b62.chunk.js",
+    "static/css/main.49658dcb.chunk.css",
+    "static/js/main.e016b647.chunk.js"
   ]
 }
