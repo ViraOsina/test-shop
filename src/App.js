@@ -1,6 +1,7 @@
 import React from 'react';
 import { BrowserRouter as Router, Switch, Route, NavLink } from "react-router-dom";
-import Logo from './assets/a-logo.png'
+import Logo from './assets/a-logo.png';
+import Vector from './assets/Vector.png'
 import './App.css';
 
 //components
@@ -23,10 +24,13 @@ function App() {
         <div className='cart__nav'> 
             <span className="cart__badge">
               $ 
-              <i className="fas fa-chevron-circle-down"></i>
-              <i className="fas fa-shopping-cart"></i>
-              <span className="cartbadge">0</span>
             </span>
+            <div className="Vector">
+              <img src={Vector} alt="vector"></img>
+            </div>
+            <i className="fas fa-shopping-cart"></i>
+            <span className="cartbadge">0</span>
+          
         </div>
      </div>
       <main className="app">
