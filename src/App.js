@@ -23,20 +23,24 @@ function App() {
         <div className="logo">
           <img src={Logo} alt="logo"></img>
         </div>
-        <NavLink to="/cart" exact>
-        <div className='cart__nav'> 
-            
-            <span className="cart__badge">
+        <div>
+          <div className="currency__converter">
+            <span className="currency__badge">
               $ 
             </span>
             <div className="Vector">
               <img src={Vector} alt="vector"></img>
             </div>
+          </div>
+        <NavLink to="/cart" exact>
+        <div className='cart__nav'> 
+            
             <i className="fas fa-shopping-cart"></i>
             <span className="cartbadge">0</span>
             
         </div>
         </NavLink>
+        </div>
      </div>
       <main className="app">
         <Switch>

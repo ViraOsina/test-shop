@@ -25,7 +25,7 @@ const ProductPage = props => {
                 <p className="product__type">Running Short</p>
                 <p className="size__label">size:</p>
                 <div className="sizes">
-                    <div className="size__box">XS</div>
+                    <div className="size__box absent">XS</div>
                     <div className="size__box">S</div>
                     <div className="size__box">M</div>
                     <div className="size__box">L</div>

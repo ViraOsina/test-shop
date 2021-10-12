@@ -2,7 +2,7 @@ ul {
   text-decoration: none;
   text-transform: uppercase;
 }
-
+/*Main navigation bar*/
 .navigation__bar {
   display: flex;
   justify-content: space-between;
@@ -25,6 +25,10 @@ ul {
   cursor: pointer;
 }
 
+.navigation a:hover{
+  color: rgba(94, 206, 123, 1);
+}
+
 .active__link {
   display: flex;
   list-style: none;
@@ -40,8 +44,17 @@ ul {
   cursor: pointer;
 }
 
-.cart__badge {
+.currency__converter{
+  display: inline-flex;
+  cursor: pointer;
+}
+
+.currency__badge {
   font-weight: 500;
+}
+
+.currency__badge:hover {
+  color: rgba(94, 206, 123, 1);
 }
 
 .Vector{
@@ -56,6 +69,10 @@ ul {
 .fa-shopping-cart {
   position: relative;
   color: rgb(94, 98, 104);
+}
+
+.fa-shopping-cart:hover {
+  color: rgba(94, 206, 123, 1);
 }
 
 .cartbadge {
@@ -74,11 +91,13 @@ ul {
   font-weight: 700;
 }
 
+/*body section*/
 main {
   height: calc(100vh - 80px);
   margin: 60px 80px 0;
 }
 
+/*product tiles on category pages*/
 .container {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
@@ -93,6 +112,7 @@ main {
   margin-bottom: 80px;
 }
 
+/* single item box*/
 .item__box {
   display: flex;
   flex-direction: column;
