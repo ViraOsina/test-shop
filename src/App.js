@@ -1,5 +1,5 @@
 import React from 'react';
-import { BrowserRouter as Router, Switch, Route, NavLink } from "react-router-dom";
+import { BrowserRouter as Router, Switch, Route, NavLink, Redirect } from "react-router-dom";
 import Logo from './assets/a-logo.png';
 import Vector from './assets/Vector.png'
 import './App.css';
@@ -16,9 +16,9 @@ function App() {
     <Router>
       <div className="navigation__bar">
         <ul className="navigation">
-          <li><NavLink to="/" exact activeClassName="active__link">Women</NavLink></li>
-          <li><NavLink to="/men" exact activeClassName="active__link">Men</NavLink></li>
-          <li><NavLink to="/kids" exact activeClassName="active__link">Kids</NavLink></li>
+          <li><NavLink to="/test-shop/" exact activeClassName="active__link">Women</NavLink></li>
+          <li><NavLink to="/test-shop/men" exact activeClassName="active__link">Men</NavLink></li>
+          <li><NavLink to="/test-shop/kids" exact activeClassName="active__link">Kids</NavLink></li>
         </ul>
         <div className="logo">
           <img src={Logo} alt="logo"></img>
@@ -32,7 +32,7 @@ function App() {
               <img src={Vector} alt="vector"></img>
             </div>
           </div>
-        <NavLink to="/cart" exact>
+        <NavLink to="/test-shop/cart" exact>
         <div className='cart__nav'> 
             
             <i className="fas fa-shopping-cart"></i>
@@ -44,11 +44,14 @@ function App() {
      </div>
       <main className="app">
         <Switch>
-          <Route exact path="/" component={WomenCategory} />
-          <Route exact path="/men" component={MenCategory} />
-          <Route exact path="/kids" component={KidsCategory} />
-          <Route exact path="/cart" component={CartPage} />
-          <Route exact path="/product" component={ProductPage} />
+          <Route exact path="/">
+            <Redirect to="/test-shop/" />
+          </Route>
+          <Route exact path="/test-shop/" component={WomenCategory} />
+          <Route exact path="/test-shop/men" component={MenCategory} />
+          <Route exact path="/test-shop/kids" component={KidsCategory} />
+          <Route exact path="/test-shop/cart" component={CartPage} />
+          <Route exact path="/test-shop/product" component={ProductPage} />
         </Switch>
       </main>
     </Router>
