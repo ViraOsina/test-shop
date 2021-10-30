@@ -4,9 +4,14 @@ import GreenCart from '../assets/green-cart.png';
 import IMAGE from '../assets/image.jpeg';
 
 
-const WomenCategory = props => {
+class WomenCategory extends React.Component {
+    constructor () {
+        super ();
+    }
+
+    render(){
     return (
-        <>
+        <main>
         <div className="category__name">Category name</div>
         <div className="container">
            
@@ -59,8 +64,9 @@ const WomenCategory = props => {
             </div>
             
         </div>
-        </>
+        </main>
     )
+    }
 }
 
 export default WomenCategory;

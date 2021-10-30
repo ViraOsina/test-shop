@@ -10,8 +10,15 @@ import MenCategory from './components/MenCategory';
 import KidsCategory from './components/KidsCategory';
 import CartPage from './components/CartPage';
 import ProductPage from './components/ProductPage';
+import DropdownCart from './components/DropdownCart';
+import Currency from './components/Currency';
 
-function App() {
+class App extends React.Component {
+    constructor () {
+      super ();
+  }
+
+  render(){
   return (
     <Router>
       <div className="navigation__bar">
@@ -24,6 +31,7 @@ function App() {
           <img src={Logo} alt="logo"></img>
         </div>
         <div>
+        <NavLink to="/test-shop/currency" exact>
           <div className="currency__converter">
             <span className="currency__badge">
               $ 
@@ -32,6 +40,7 @@ function App() {
               <img src={Vector} alt="vector"></img>
             </div>
           </div>
+        </NavLink>
         <NavLink to="/test-shop/cart" exact>
         <div className='cart__nav'> 
             
@@ -42,7 +51,7 @@ function App() {
         </NavLink>
         </div>
      </div>
-      <main className="app">
+      <>
         <Switch>
           <Route exact path="/">
             <Redirect to="/test-shop/" />
@@ -50,12 +59,14 @@ function App() {
           <Route exact path="/test-shop/" component={WomenCategory} />
           <Route exact path="/test-shop/men" component={MenCategory} />
           <Route exact path="/test-shop/kids" component={KidsCategory} />
-          <Route exact path="/test-shop/cart" component={CartPage} />
+          <Route exact path="/test-shop/cart" component={DropdownCart} />
+          <Route exact path="/test-shop/currency" component={Currency} />
           <Route exact path="/test-shop/product" component={ProductPage} />
         </Switch>
-      </main>
+      </>
     </Router>
   );
+  }
 }
 
 export default App;

@@ -1,9 +1,15 @@
 import React from 'react';
 
-const MenCategory = props => {
+class MenCategory extends React.Component {
+    constructor () {
+        super ();
+    }
+
+    render(){
     return (
         <div>Men</div>
     )
+    }
 }
 
 export default MenCategory;

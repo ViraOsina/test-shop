@@ -2,9 +2,14 @@ import React from 'react';
 import './CartPage.css';
 import IMAGE from '../assets/image.jpeg';
 
-const CartPage = props => {
+class CartPage extends React.Component {
+    constructor () {
+        super ();
+    }
+
+    render(){
     return (
-        <> 
+        <main> 
        {/* <div className="category__name">Your cart is empty now</div>*/}
        <div className="category__name"> Cart </div>
         <div className="cart__container">
@@ -56,8 +61,9 @@ const CartPage = props => {
                 <span className="cart__total__sum">$50.00</span>
             </div>
         </div>
-        </>
+        </main>
     )
+    }
 }
 
 export default CartPage;

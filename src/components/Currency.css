@@ -1,0 +1,30 @@
+.currency__cover {
+    width: 100%;
+    min-height: 100%;
+    position: relative;
+}
+
+.currency__dropdown {
+    width: 114px;
+    height: 169px;
+    background-color: rgba(255, 255, 255, 1);
+    box-shadow: 0px 4px 35px rgba(168, 172, 176, 0.19);
+    position: absolute;
+    top: 0;
+    right: 78px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+.currency{
+    font-weight: 500;
+    font-size: 18px;
+    text-transform: uppercase;
+    border: none;
+    cursor: pointer;
+}
+
+.currency:hover {
+    color: rgba(94, 206, 123, 1);
+}

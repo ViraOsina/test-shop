@@ -1,9 +1,15 @@
 import React from 'react';
 
-const KidsCategory = props => {
+class KidsCategory extends React.Component {
+    constructor () {
+        super ();
+    }
+
+    render(){
     return (
         <div>Kids</div>
     )
+    }
 }
 
 export default KidsCategory;

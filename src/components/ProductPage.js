@@ -2,9 +2,14 @@ import React from 'react';
 import IMAGE from '../assets/image.jpeg';
 import './ProductPage.css';
 
-const ProductPage = props => {
+class ProductPage extends React.Component {
+    constructor () {
+        super ();
+    }
+
+    render(){
     return (
-        <>
+        <main>
         <div className="product__container">
             <div className="side__images">
                 <div className="small__image">
@@ -36,8 +41,9 @@ const ProductPage = props => {
                 <p className="product__description">Find stunning women's cocktail dresses and party dresses. Stand out in lace and metallic cocktail dresses and party dresses from all your favorite brands.</p>
             </div>
         </div>
-        </>
+        </main>
     )
+    }
 }
 
 export default ProductPage;
